@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="I9V-TE-yAb" customClass="LoadingCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I9V-TE-yAb" id="ZWH-DG-gCp">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ybE-A1-UEk">
+                        <rect key="frame" x="186.66666666666666" y="16" width="20" height="43"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ybE-A1-UEk" secondAttribute="bottom" constant="16" id="AEk-HQ-BzW"/>
+                    <constraint firstItem="ybE-A1-UEk" firstAttribute="centerX" secondItem="ZWH-DG-gCp" secondAttribute="centerX" id="OOM-8k-Bbs"/>
+                    <constraint firstItem="ybE-A1-UEk" firstAttribute="top" secondItem="ZWH-DG-gCp" secondAttribute="top" constant="16" id="qJm-t9-ZRC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="loader" destination="ybE-A1-UEk" id="v4x-xB-doZ"/>
+            </connections>
+            <point key="canvasLocation" x="-199.23664122137404" y="-42.605633802816904"/>
+        </tableViewCell>
+    </objects>
+</document>

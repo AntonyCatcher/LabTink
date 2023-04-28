@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="282" id="wSp-lR-iHd" customClass="NewsItemCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="282"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wSp-lR-iHd" id="Fr3-Mw-D4d">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="282"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OHp-AH-4bo">
+                        <rect key="frame" x="10" y="10" width="373" height="186.66666666666666"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OHp-AH-4bo" secondAttribute="height" multiplier="5:2.5" id="qUI-LO-Nbt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUU-9X-LeC">
+                        <rect key="frame" x="10" y="206.66666666666666" width="373" height="23"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twd-X4-7mm">
+                        <rect key="frame" x="345.66666666666669" y="239.66666666666666" width="37.333333333333314" height="32.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xUU-9X-LeC" firstAttribute="leading" secondItem="Fr3-Mw-D4d" secondAttribute="leading" constant="10" id="AxK-bY-SVL"/>
+                    <constraint firstItem="xUU-9X-LeC" firstAttribute="top" secondItem="OHp-AH-4bo" secondAttribute="bottom" constant="10" id="IKe-jb-5FL"/>
+                    <constraint firstAttribute="trailing" secondItem="OHp-AH-4bo" secondAttribute="trailing" constant="10" id="VXr-wY-FZa"/>
+                    <constraint firstItem="OHp-AH-4bo" firstAttribute="top" secondItem="Fr3-Mw-D4d" secondAttribute="top" constant="10" id="VyC-1L-c9X"/>
+                    <constraint firstItem="OHp-AH-4bo" firstAttribute="leading" secondItem="Fr3-Mw-D4d" secondAttribute="leading" constant="10" id="aYP-6S-fxx"/>
+                    <constraint firstAttribute="bottom" secondItem="Twd-X4-7mm" secondAttribute="bottom" constant="10" id="cxK-U1-XpG"/>
+                    <constraint firstAttribute="trailing" secondItem="xUU-9X-LeC" secondAttribute="trailing" constant="10" id="kSq-wK-kte"/>
+                    <constraint firstAttribute="trailing" secondItem="Twd-X4-7mm" secondAttribute="trailing" constant="10" id="nBc-uS-AbH"/>
+                    <constraint firstItem="Twd-X4-7mm" firstAttribute="top" secondItem="xUU-9X-LeC" secondAttribute="bottom" constant="10" id="nnS-ka-uwz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsImage" destination="OHp-AH-4bo" id="SaF-4x-qmU"/>
+                <outlet property="newsTitle" destination="xUU-9X-LeC" id="kXI-zM-MWS"/>
+                <outlet property="viewedCount" destination="Twd-X4-7mm" id="Lo1-gV-SiB"/>
+            </connections>
+            <point key="canvasLocation" x="83.206106870229007" y="23.943661971830988"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

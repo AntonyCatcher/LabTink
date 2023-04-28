@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="68" id="t8W-NU-0pH" customClass="RetryCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t8W-NU-0pH" id="V2Q-Tq-wK0">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc3-uC-sww">
+                        <rect key="frame" x="107.00000000000001" y="10" width="179.33333333333337" height="48"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Повторить попытку"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="retryDidPress" destination="t8W-NU-0pH" eventType="touchUpInside" id="1I4-3r-viZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gc3-uC-sww" firstAttribute="centerX" secondItem="V2Q-Tq-wK0" secondAttribute="centerX" id="UxP-cX-OUM"/>
+                    <constraint firstItem="gc3-uC-sww" firstAttribute="top" secondItem="V2Q-Tq-wK0" secondAttribute="top" constant="10" id="oLk-fn-8zK"/>
+                    <constraint firstItem="gc3-uC-sww" firstAttribute="centerY" secondItem="V2Q-Tq-wK0" secondAttribute="centerY" id="uk1-0G-Z3I"/>
+                    <constraint firstAttribute="bottom" secondItem="gc3-uC-sww" secondAttribute="bottom" constant="10" id="vUp-Zg-PLv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="29.770992366412212" y="-2.1126760563380285"/>
+        </tableViewCell>
+    </objects>
+</document>
